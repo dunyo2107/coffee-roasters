@@ -1,3 +1,31 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* roboto-500 - latin */
+    @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* roboto-700 - latin */
+    @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root{
+    --text-font: "Roboto", "Arial", sans-serif;
+}
 html{
     box-sizing: border-box;
     height: 100%;
@@ -15,7 +43,7 @@ body{
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: var(--text-font);
     height: 100%;
 }
 
