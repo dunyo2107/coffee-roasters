@@ -24,7 +24,13 @@
 }
 
 :root{
-    --text-font: "Roboto", "Arial", sans-serif;
+    --font-family: "Roboto", "Arial", sans-serif;
+    --hero-bg: #F3D7B7;
+    --gray: #F5F5EC;
+    --brown: #C99B67;
+    --green: #086752;
+    --text-color: #333;
+
 }
 html{
     box-sizing: border-box;
@@ -41,9 +47,9 @@ body{
     font-display: column;
     padding: 0;
     margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: var(--text-font);
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--font-family);
     height: 100%;
 }
 
@@ -54,9 +60,9 @@ img{
 
 .container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
 }
