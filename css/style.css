@@ -44,7 +44,7 @@ html{
 
 body{
     display: flex;
-    font-display: column;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     font-size: 18px;
@@ -71,7 +71,62 @@ img{
     flex-grow: 1;
 }
 
-
+/* Site Header */
+.header-hero-wrapper {
+    background-image: url("../img/hero-header-bg.jpg");
+}
+.header {
+    padding: 40px 0;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.site-header-logo-link{
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.site-header-logo-link:hover{
+    opacity: 0.8;
+}
+.site-header-logo-link:active{
+    opacity: 0.6;
+}
+.site-header-logo-img {
+    width: 235px;
+    height: 24px;
+}
+.sitenav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sitenav-item:not(:last-child){
+    margin-right: 40px;
+}
+.sitenav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.sitenav-link:hover{
+    opacity: 0.8;
+    color: var(--green);
+}
+.sitenav-link:active{
+    opacity: 0.6;
+    color: var(--text-color);
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -79,5 +134,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
+    .header-hero-wrapper {
+        background-image: url("../img/hero-header-bg@2x.jpg");
+    }
 
 }
