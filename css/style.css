@@ -199,6 +199,7 @@ img{
     background-color: var(--light-gray);
     background-image: url("../img/index-collection-bg.jpg");
     padding: 50px 143px;
+    margin-bottom: 20px;
 }
 .index-collection-heading {
     color: #000;
