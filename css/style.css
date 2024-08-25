@@ -31,7 +31,6 @@
     --brown: #C99B67;
     --green: #0A775F;
     --text-color: #333;
-
 }
 html{
     box-sizing: border-box;
@@ -90,9 +89,6 @@ img{
     margin-left: auto;
 }
 
-.main-content{
-    flex-grow: 1;
-}
 
 /* Site Header */
 .header-hero-wrapper {
@@ -190,6 +186,7 @@ img{
 .hero-img-index{
     height: 696px;
 }
+
 /* Main content */
 .main-content{
     flex-grow: 1;
@@ -266,5 +263,4 @@ only screen and (                min-resolution: 2dppx) {
     .index-collection-inner {
         background-image: url("../img/index-collection-bg@2x.jpg");
     }
-
 }
