@@ -262,7 +262,9 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     .header-hero-wrapper {
         background-image: url("../img/hero-header-bg@2x.jpg");
-        background-size: contain;
+    }
+    .index-collection-inner {
+        background-image: url("../img/index-collection-bg@2x.jpg");
     }
 
 }
