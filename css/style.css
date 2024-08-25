@@ -327,4 +327,7 @@ only screen and (                min-resolution: 2dppx) {
     .index-collection-inner {
         background-image: url("../img/index-collection-bg@2x.jpg");
     }
+    .index-features-inner{
+        background-image: url("../img/features-bg@2x.jpg");
+    }
 }
