@@ -98,6 +98,7 @@ img{
 .header-hero-wrapper {
     background-image: url("../img/hero-header-bg.jpg");
     background-size: contain;
+    background-color: var(--hero-bg);
 }
 .header {
     padding: 40px 0 45px 0;
