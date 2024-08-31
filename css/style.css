@@ -442,21 +442,20 @@ img{
 
 /* ABOUT US PAGE */
 .index-commitment{
-    background-image: url("../img/index-collection-bg.jpg");
     margin-bottom: 160px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
-.commitment-container {
+.commitment-inner {
     display: flex;
     align-items: center;
+    background-image: url("../img/index-collection-bg.jpg");
+    background-size: 100% 740px;
     justify-content: space-between;
     padding: 160px 0 200px 0;
 }
 .commitment-content {
     width: 100%;
     max-width: 626px;
-    padding: 0 65px 0 185px;
+    padding: 0 64px 0 165px;
 }
 .index-commitment-img{
     width: 360px;
@@ -483,22 +482,19 @@ img{
 /* Qualities */
 .quality-container{
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.index-qualities {
-        background-image: url("../img/features-bg.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 510px;
-        margin-left: 20px;
-        margin-right: 20px;
+    background-image: url("../img/features-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 510px;
+    background-repeat: no-repeat;
+    padding: 100px 0 90px 0;
 }
 .quality-content {
     width: 100%;
     max-width: 639px;
-    padding: 100px 38px 118px 143px;
     display: flex;
     flex-direction: column;
+    padding: 0 30px 0 143px;
+    flex-grow: 1;
 }
 .index-features-heading.quality-heading {
     margin-top: 0;
@@ -512,15 +508,23 @@ img{
 .quality-img{
     width: 550px;
     height: 500px;
-    margin-top: -80px;
-    margin-bottom: 90px;
+    margin-top: -160px;
 }
 /* How it works */
-.how-it-works-data {
+.how-it-works-data{
     display: flex;
-    flex-direction: column;
     background-color: var(--light-gray);
     padding: 20px 20px 30px;
+}
+.how-it-works-text-wrap.quality{
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+.how-it-works-text-wrap{
+    display: flex;
+    flex-direction: column;
+    padding-top: 167px;
 }
 .how-it-works-item-pro{
     display: flex;
@@ -530,15 +534,19 @@ img{
     text-align: start;
 }
 .how-it-works-data-img{
-    align-self: end;
-    content: "";
-    color: var(--text-color);
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 75px;
-    opacity: 0.8;
-    margin-bottom: 45px;
+    width: 120px;
+    height: 143px;
+    display: inline-block;
 }
+.how-it-works-text.quality{
+    width: 141px;
+}
+.how-it-works-list.quality{
+    display: flex;
+    align-items: center;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
