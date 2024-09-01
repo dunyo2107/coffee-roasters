@@ -85,7 +85,7 @@ img {
     font-size: 16px;
     background-color: var(--green);
 }
-.button-green.dropdown {
+.button-green.accordion {
     display: flex;
     align-self: end;
 }
@@ -129,7 +129,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
 }
 
 .site-header-logo-link {
@@ -638,10 +637,12 @@ img {
 /* Preferences page */
 .preferences{
     margin-bottom: 50px;
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
 }
 .preferences-inner {
     display: flex;
+    justify-content: space-between;
     background-image: url("../img/index-collection-bg.jpg");
     background-size: 100% 1167px;
     padding: 50px 142px 50px 30px;
@@ -652,7 +653,7 @@ img {
     list-style: none;
     counter-reset: preferences;
     width: 100%;
-    max-width: 650px;
+    max-width: 600px;
 }
 .preferences-item {
     width: 200px;
@@ -685,12 +686,12 @@ img {
     text-decoration: 3px dotted var(--brown);
 }
 
-/* Dropdown */
+/* accordion */
 .content {
     display: flex;
     flex-direction: column;
 }
-.dropdown-list {
+.accordion-list {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -700,7 +701,7 @@ img {
     max-width: 650px;
 }
 
-.dropdown-item:not(:last-child){
+.accordion-item:not(:last-child){
     margin-bottom: 60px;
 }
 .show-more-heading {
@@ -709,28 +710,28 @@ img {
     font-weight: 700;
     line-height: 47px;
     margin: 0;
-    margin-right: 45px;
-    margin-bottom: 20px;
 }
-
-.prefences-dropdown-list {
+.toggle-button{
+    cursor: pointer;
+}
+.prefences-accordion-list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
 }
 
-.prefences-dropdown-item {
+.prefences-accordion-item {
     background-color: var(--green);
     padding: 30px 16px 80px;
     width: 206px;
 }
 
-.prefences-dropdown-item:not(:last-child) {
+.prefences-accordion-item:not(:last-child) {
     margin-right: 20px;
 }
 
-.preferences-dropdown-subtitle {
+.preferences-accordion-subtitle {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
@@ -739,7 +740,7 @@ img {
     margin-bottom: 10px;
 }
 
-.preferences-dropdown-text {
+.preferences-accordion-text {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
@@ -749,9 +750,15 @@ img {
 /* Show more */
 .show-more-inner{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
-
+.show-more-inner i{
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+}
 .hidden {
     display: none;
 }
